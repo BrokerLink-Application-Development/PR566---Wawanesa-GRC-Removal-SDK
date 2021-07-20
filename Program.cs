@@ -23,9 +23,8 @@ namespace EpicIntegrator
         {
             //ActToDB();
 
-            InsertActivities();
+            //InsertActivities();
 
-            //TestActivity();
         }
 
         static void ActToDB()
@@ -86,14 +85,6 @@ namespace EpicIntegrator
         }
         
        
-        static void TestActivity()
-        {
-            EpicIntegrator.ActivityService acs = new EpicIntegrator.ActivityService();
-            //acs.InsertActivity(61629254);
-            Console.ReadKey();
-
-        }
-
 
         static void InsertActivities()
         {
@@ -105,8 +96,7 @@ namespace EpicIntegrator
             List<Tuple<int, int, int>> PolsList = new List<Tuple<int, int, int>>();
                        
             EpicIntegrator.ActivityService acs = new EpicIntegrator.ActivityService();
-            EpicIntegrator.ClientService ccs = new EpicIntegrator.ClientService();
-            EpicIntegrator.PolicyService pcs = new EpicIntegrator.PolicyService();
+
 
             var ActCloseStart = DateTime.Now;
             Console.WriteLine("Code Started: " + ActCloseStart);
